@@ -25,6 +25,13 @@
     border-top: 2px solid $highlight;
     margin: 2rem 0;
   }
+  a {
+    text-decoration: none;
+    color: $dark;
+    &:hover {
+      color: $highlight;
+    }
+  }
   h3 {
     font-size: 1.35em;
     font-weight: 400;
