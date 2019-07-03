@@ -5,6 +5,10 @@ $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #E9E9E9;
 
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -66,7 +70,7 @@ p, ul, ol {
 }
 
 .wrapper_padding {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 #main-navigation {
