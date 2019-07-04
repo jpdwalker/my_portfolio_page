@@ -1,4 +1,22 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+  <header id="main-navigation" class="clearfix">
+    <a href="#" class="name">Joe Walker</a>
+    <nav>
+      <%= link_to "Articles", articles_path  %>
+      <!-- <a href="articles_path">Articles</a> -->
+      <%= link_to "Projects", projects_path  %>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <h1 class="page-title">Writings</h1>
 
 <%= link_to "Back", root_path %>
+
+  <footer id="main_footer">
+    <p class="copyright">&copy; 2019 Joe Walker</p>
+    <nav>
+      <a href="https://www.linkedin.com/in/joe-walker-4a353b101/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/jpdwalker" target="_blank"><i class="fab fa-github-square"></i></a>
+      <a href="https://www.facebook.com/joe.walker.543" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    </nav>
+
+  </footer>
