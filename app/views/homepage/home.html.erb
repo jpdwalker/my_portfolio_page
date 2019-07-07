@@ -1,9 +1,10 @@
 <div class="viewpoint">
   <header id="main-navigation" class="clearfix">
-    <a href="#" class="name">Joe Walker</a>
+      <%= link_to 'Joe Walker', root_path, :class => 'name' %>
     <nav>
-      <a href="#">Articles</a>
-      <a href="#">Projects</a>
+      <%= link_to "Articles", articles_path  %>
+      <!-- <a href="articles_path">Articles</a> -->
+      <%= link_to "Projects", projects_path  %>
       <a href="#">Contact</a>
     </nav>
   </header>
@@ -11,8 +12,8 @@
     <div class="col-1 about homepage_content">
       <h2>About</h2>
       <hr>
-      <p>I'm a Full Stack Developer from London, UK.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum vel praesentium.</p>
+      <p>I'm Joe, a Full Stack Developer from London, UK.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vitae.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam id officia ex, iusto voluptate ad commodi a veniam, rerum eveniet?</p>
     </div>
     <div class="col-2 homepage_content">
