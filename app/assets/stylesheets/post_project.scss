@@ -1,0 +1,44 @@
+#posts-wrapper {
+  padding: 3em 0;
+  .post {
+    text-align: center;
+    .date {
+      font-size: .9em;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.6em;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $dark;
+        &:hover {
+          color: $highlight;
+        }
+      }
+    }
+    hr {
+      margin: 3em auto;
+    }
+  }
+}
+
+
+// --------Pagination
+
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear:box;
+}
+
+.pagination {
+  text-align: center;
+}

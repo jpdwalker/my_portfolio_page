@@ -64,6 +64,16 @@ p, ul, ol {
   margin: 0 0 1.6em 0;
 }
 
+ hr {
+    width: 3em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $highlight;
+    margin: 2rem 0;
+  }
+
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -138,5 +148,5 @@ p, ul, ol {
   text-transform: uppercase;
 }
 
-@import 'welcome'
-
+@import 'welcome';
+@import 'post_project'
