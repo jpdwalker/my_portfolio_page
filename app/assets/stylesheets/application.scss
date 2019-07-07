@@ -69,6 +69,12 @@ p, ul, ol {
   margin: 0 auto;
 }
 
+.skinny-wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
 .wrapper_padding {
   padding: 2rem 0;
 }
@@ -121,6 +127,15 @@ p, ul, ol {
       }
     }
   }
+}
+
+#page-title {
+
+  text-align: center;
+  border-bottom: 1px solid $border;
+  padding: 3em 0;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 @import 'welcome'
