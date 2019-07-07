@@ -26,7 +26,6 @@
   }
 }
 
-
 // --------Pagination
 
 .pagination:before,
@@ -41,4 +40,27 @@
 
 .pagination {
   text-align: center;
+  margin: 0 0 3em 0;
+  a, .previous_page, .current, .next_page {
+    padding: .75em 1em;
+    margin: 0 .25em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: white;
+    font-weight: 700;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+      background: $highlight;
+      color: white;
+    }
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+      color: #C0C0C0;
+      background: white;
+    }
+  }
 }
