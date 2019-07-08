@@ -25,6 +25,17 @@ class ArticlesController < ApplicationController
   end
 
   def update
+    if @article.update article_params
+      redirect_to @article, notice: "Article saved"
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @article.destroy
+
+    redirect_to articles_path
   end
 
   private
