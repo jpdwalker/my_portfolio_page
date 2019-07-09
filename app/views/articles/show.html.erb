@@ -6,7 +6,7 @@
   </header>
 
   <div id="content">
-    <p><%= @article.content %></p>
+    <p><%= markdown @article.content %></p>
   </div>
 
   <hr>
@@ -16,9 +16,12 @@
 
   <div id="share_box">
     <p>Share <%= @article.title %></p>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-google-plus"></i></a>
+    <!-- Twitter -->
+    <a onClick="javascript:window.open('http://twitter.com/share?text=<%= @article.title %> &amp;url=<%= url_for([@article, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fab fa-twitter"></i></a>
+    <!-- Facebook -->
+     <a onClick="javascript:window.open('http://facebook.com/sharer.php?u=<%= url_for([@article, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fab fa-facebook"></i></a>
+    <!-- LinkedIn -->
+     <a onClick="javascript:window.open('http://plus.google.com/share?url=<%= url_for([@article, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fab fa-linkedin"></i></a>
   </div>
 
   <hr>
