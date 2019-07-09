@@ -129,12 +129,12 @@ p, ul, ol {
       color: $dark;
       margin-left: 1em;
       padding-top: .2em;
-      font-size: 20px;
-      &:hover {
-        color: &highlight;
-        transform: scale(1.2);
-        transition: 0.3s;
-      }
+      // font-size: 20px;
+      // &:hover {
+      //   color: &highlight;
+      //   transform: scale(1.2);
+      //   transition: 0.3s;
+      // }
     }
   }
 }
