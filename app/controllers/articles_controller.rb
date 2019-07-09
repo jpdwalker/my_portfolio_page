@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :find_article, only: [:show, :edit, :update, :destroy]
 
   def index
-    @articles = Article.all.order("created_at desc").paginate(page: params[:page], per_page: 1)
+    @articles = Article.all.order("created_at desc").paginate(page: params[:page], per_page: 5)
   end
 
   def new
