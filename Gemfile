@@ -16,6 +16,7 @@ gem 'font-awesome-sass', '~> 5.8', '>= 5.8.1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'pygments.rb', '~> 1.2', '>= 1.2.1'
 gem 'redcarpet', '~> 3.4'
+gem 'friendly_id', '~> 5.2', '>= 5.2.5'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
