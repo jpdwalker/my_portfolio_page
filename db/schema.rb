@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_10_094526) do
+ActiveRecord::Schema.define(version: 2019_07_10_102553) do
 
   create_table "articles", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 2019_07_10_094526) do
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_projects_on_slug", unique: true
   end
 
 end
