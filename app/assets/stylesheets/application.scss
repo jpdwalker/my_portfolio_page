@@ -102,6 +102,8 @@ p, ul, ol {
 #main-navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+  background-color: transparent;
+  z-index: 1;
   .name {
     font-weight: 700;
     font-size: .8em;
@@ -110,14 +112,14 @@ p, ul, ol {
     border: 2px solid #E9E9E9;
     padding: 1em;
     text-decoration: none;
-    color: $dark;
+    color: white;
     float: left;
   }
   nav {
     float: right;
     padding-top: 1.5rem;
     a {
-      color: $dark;
+      color: white;
       text-decoration: none;
       margin: 0 1rem;
       font-size: 1rem;
@@ -200,7 +202,11 @@ input[type="submit"], .button {
   text-transform: uppercase;
 }
 
-
+.header {
+  height: 100vh;
+  z-index: 0;
+  background: black;
+}
 
 @import 'welcome';
 @import 'post_project';
