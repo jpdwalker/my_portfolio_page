@@ -15,7 +15,7 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'font-awesome-sass', '~> 5.8', '>= 5.8.1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'pygments.rb', '~> 1.2', '>= 1.2.1'
-gem 'redcarpet', '~> 3.4'
+gem 'redcarpet', '~> 3.5'
 gem 'friendly_id', '~> 5.2', '>= 5.2.5'
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'mail_form', '~> 1.7', '>= 1.7.1'
